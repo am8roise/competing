@@ -7,14 +7,14 @@ This repository contains the **source codes** corresponding to the preprint pape
 ## Repository Structure
 
 #### About the Data
-Due to **storage limitations** and **compatbility issues**, we cannot include most of the raw data as well as the processed data in this repository. If you require access to the raw and/or the processed datasets, feel free to contact the authors.
+Due to **storage limitations** and **compatbility issues**, we cannot include most of the raw data as well as the processed data in this repository. If you require access to the raw or the processed datasets, feel free to contact the authors.
 
 #### Directory Structure
-Data that are used in the paper is located in
+Code that are used to create and process data corresponding to the graphs in the paper are located in
 
 - `SRC/` Contains the scripts used to obtain and process the data used in the paper, in `julia` and `python`.
-	- `RUN/` Contains the scripts used to produces the data.
-	- `PLOT/` Contains the scripts used to produces the graphs.
+	- `RUN/` Contains the scripts used to produce the data.
+	- `PLOT/` Contains the scripts used to produce the graphs.
 	- `MISC/` Contains scripts and graphs related to some analytical results.
 
 ## Citation
