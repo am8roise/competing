@@ -1,0 +1,8 @@
+scipy
+numpy
+matplotlib
+cython
+setuptools
+pandas
+seaborn
+ncon

@@ -1,0 +1,32 @@
+#!/bin/bash -l
+
+#SBATCH --job-name=dmrg
+#SBATCH --cpus-per-task=40
+#SBATCH --time=1-00:00:00
+#SBATCH --mem=30G
+#SBATCH --output=../logs/%x_%a.out
+#SBATCH --error=../logs/%x_%a.err
+#SBATCH --array=1-1
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --partition=daily
+
+echo " ****** START OF JOB ******"
+date
+
+arguments=$(sed "${SLURM_ARRAY_TASK_ID}q;d" inputs.txt) 
+echo "var = ${arguments}"
+
+# python3 ../RUN/dmrg.py --lam $arguments &
+# python3 ../RUN/dmrg.py --theta $arguments &
+
+# python3 ../RUN/idmrg.py --lam $arguments &
+# python3 ../RUN/idmrg.py --theta $arguments &
+
+python3 ../RUN/ed.py --lam $arguments &
+# python3 ../RUN/ed.py --theta $arguments &
+
+wait
+
+date
+echo " ****** END OF JOB ******"
