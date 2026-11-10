@@ -16,6 +16,7 @@ Scripts that are used to create and process data corresponding to the graphs pre
 	- `RUN/` Contains the scripts used to produce the data.
 	- `PLOT/` Contains the scripts used to produce the graphs.
 	- `MISC/` Contains scripts and graphs related to some analytical results.
+- `GRAPHS/` Contains the graphs made from the data appearing in the paper.
 
 ## Citation
 If you use this data, please cite the corresponding paper
